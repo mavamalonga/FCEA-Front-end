@@ -36,6 +36,9 @@ body {font-family: "Open Sans"}
 
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
             <div class="navbar-nav">
                 <a href="home.html" class="nav-item nav-link">ACTUALITÉS</a>
@@ -50,9 +53,9 @@ body {font-family: "Open Sans"}
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">LES SENIORS</a>
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">LES SENIORS</a>
                     <div class="dropdown-menu">
-                        <a href="team.html" class="dropdown-item">SENIORS A</a>
+                        <a href="team.html" class="dropdown-item active">SENIORS A</a>
                         <a href="#" class="dropdown-item">SENIORS B</a>
                         <a href="#" class="dropdown-item">FUTSAL</a>
                         <a href="#" class="dropdown-item">VÉTÉRANS</a>
@@ -83,7 +86,7 @@ body {font-family: "Open Sans"}
                     </div>
                 </div>
                 <a href="" class="nav-item nav-link">JOUEURS FORMÉS AU CLUB</a>
-                <a href="contact.html" class="nav-item nav-link active">CONTACT</a>
+                <a href="contact.html" class="nav-item nav-link">CONTACT</a>
             </div>
             <div class="navbar-nav ms-auto">
                 <a href="#" class="nav-item nav-link">Login</a>
@@ -92,82 +95,102 @@ body {font-family: "Open Sans"}
     </div>
 </nav>
   
-<!-- Contact Start -->
-<div class="container-fluid py-3">
-    <div class="container">
-        <div class="bg-light py-2 px-4 mb-3">
-            <h3 class="m-0">Contact Us For Any Queries</h3>
-        </div>
-        <div class="row">
-            <div class="col-md-5">
-                <div class="bg-light mb-3" style="padding: 30px;">
-                    <h6 class="font-weight-bold">Get in touch</h6>
-                    <p>Labore ipsum ipsum rebum erat amet nonumy, nonumy erat justo sit dolor ipsum sed, kasd lorem sit et duo dolore justo lorem stet labore, diam dolor et diam dolor eos magna, at vero lorem elitr</p>
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
-                        <div class="d-flex flex-column">
-                            <h6 class="font-weight-bold">Our Office</h6>
-                            <p class="m-0">123 Street, New York, USA</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fa fa-2x fa-envelope-open text-primary mr-3"></i>
-                        <div class="d-flex flex-column">
-                            <h6 class="font-weight-bold">Email Us</h6>
-                            <p class="m-0">info@example.com</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <i class="fas fa-2x fa-phone-alt text-primary mr-3"></i>
-                        <div class="d-flex flex-column">
-                            <h6 class="font-weight-bold">Call Us</h6>
-                            <p class="m-0">+012 345 6789</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-7">
-                <div class="contact-form bg-light mb-3" style="padding: 30px;">
-                    <div id="success"></div>
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                        <div class="form-row">
-                            <div class="col-md-6">
-                                <div class="control-group">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="control-group">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control p-4" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <textarea class="form-control" rows="4" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div>
-                            <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;" type="submit" id="sendMessageButton">Send Message</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Contact End -->
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
 
-<!-- Plan -->
-<div class="container bg-light">
-    <div class="container ">
-        <img src="img/plan.png" width="100%" height="400px">
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-justify">
+          <h1>Senior A - Saison 2020-2021</h1>
+        </div>
+        <div class="container p-3 my-3 border">
+            <img src="img/equipe.png" alt="Girl Hat" style="width:100%" height="400px" class="w3-padding-16">
+        </div>
+      </div>
+      <hr>
+    <!-- END BLOG ENTRIES -->
+</div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+            <h4>INFOS-UTILES</h4>
+        </div>
+        <div class="container p-3 my-3 border">
+            <p><strong>Planning des entraînements :</strong><br> 
+                Pour la saison 2020 / 2021<br><br> 
+                Date : Mardi 20h30-22h<br> 
+                Date : Jeudi 20h30-22h<br><br> 
+                <strong>Terrain d'entraînement :</strong><br> 
+                Adresse : Boulevard Charles de Gaulle, 91800 Brunoy<br><br> 
+                Rappel : la gare de Brunoy est à une vingtaine de minutes à pieds.<br><br>
+               <strong>Responsable :</strong> Akin A<br>
+               Educateur(s)
+                <ul>
+                    <li>Alexandre</li><br>
+                </ul>
+            </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Agenda</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="img/fff.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Coupe de l'Essonne</span><br>
+            <span>F.C EPINAY ATHLETICO VS CS BRETIGNY</span><br>
+            <span>Date : 23/05/22 à 18h00</span>
+            <span>Adresse : 11 av. Charles Stade WW</span><br>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/fff.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Sweaters</span>
+            <br>
+            <span>Praes tinci sed</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/fff.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Workshop</span>
+            <br>
+            <span>Ultricies congue</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+    <!-- END About/Intro Menu -->
     </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
 </div>
 
 
