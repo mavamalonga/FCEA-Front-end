@@ -1,6 +1,14 @@
 h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
 body {font-family: "Open Sans"}
 
+body{
+    /*background-image: url(../img/stade.jpg);*/
+    background-size: contain;
+    background-color: #cccccc;
+    background-position: center;
+    /*background-repeat: no-repeat;*/
+}
+
 body {
         font-family: 'Signika', sans-serif;
      }
@@ -95,3 +103,12 @@ a:hover {
     height: 100%;
     }
 /* Credit to https://bootsnipp.com/snippets/M56El  */
+
+
+.w3-bar {
+    background-color: rgb(227, 231, 234);
+}
+
+.nav-item{
+    color: white;
+}

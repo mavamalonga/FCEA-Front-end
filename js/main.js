@@ -4,7 +4,7 @@
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
-            if ($(window).width() > 992) {
+            if ($(window).width() < 768) {
                 $('.navbar .dropdown').on('mouseover', function () {
                     $('.dropdown-toggle', this).trigger('click');
                 }).on('mouseout', function () {
