@@ -9,373 +9,214 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-<style>
-h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
-body {font-family: "Open Sans"}
-
-body {
-        font-family: 'Signika', sans-serif;
-     }
-     .bg-grey {
-        background: #292929;
-     }
-     .logo-footer {
-        margin-bottom: 40px;
-     }
-     footer {
-            color: grey;
-     }
-     footer p, a {
-    font-size: 12px;
-    font-family: 'Roboto', sans-serif;
-}
-footer h6 {
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 40px;
-    position: relative;
-}
-footer h6:after {
-    position: absolute;
-    content: "";
-    background: grey;
-    width: 12%;
-    height: 1px;
-    left: 0;
-    bottom: -20px;
-}
-     .btn-footer {
-                 color: grey;
-              
-                text-decoration: none;
-                border: 1px solid;
-                border-radius: 43px;
-                font-size: 13px;
-                padding: 7px 30px;
-                line-height: 47px;
-     }
-     .btn-footer:hover {
-                
-                text-decoration: none;
-               
-     }
-    .form-footer input[type="text"] {
-        border: none;
-    border-radius: 16px 0 0 16px;
-    outline: none;
-    padding-left: 10px;
-    
-}
-::placeholder {
-    font-size: 10px;
-    padding-left: 10px;
-    font-style: italic;
-}
- .form-footer input[type="button"] {
-    border: none;
-    background:#232323;
-        margin-left: -5px;
-    color: #fff;
-    outline: none;
-    border-radius: 0 16px 16px 0;
-    padding: 2px 12px;
-}
-     .social .fa {
-    color: grey;
-    font-size: 22px;
-    padding: 10px 15px;
-    background: #3c3c3c;
-}
-     footer ul li {
-    list-style: none;
-    display: block;
-}
-  footer ul  {
-   padding-left: 0;
-}
-footer ul  li a{
-  text-decoration: none;
-  color: grey;
-  text-decoration:none;
-}
-a:hover {
-    text-decoration: none;
-    color: #f5f5f5 !important;
-    
-}
-.logo-part {
-    border-right: 1px solid grey;
-    height: 100%;
-    }
-    
-/* Credit to https://bootsnipp.com/snippets/M56El  */
-</style>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+<link rel="stylesheet" href="css/home.css" />
+<!-- le button style doit etre après bootstrap pour écraser le style de bootstrap-->
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/carrousel.css" />
 </head>
 <body class="w3-light-grey">
 
 
-<!-- Navigation bar with social media icons -->
-<div class="w3-bar w3-black w3-hide-small">
-  <b class="w3-bar-item w3-button w3-left">Just me, myself and I, exploring the universe of uknownment.</b>
-  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-facebook-official"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-instagram"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-snapchat"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-flickr"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-twitter"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-linkedin"></i></a>
-</div>
+    <!-- Les différents taille d'écran et le type d'affichage à adopter 
+    , commande à inserer sur toutes les div du row en question.
+    col-xs-12 col-sm-12 col-md-4 col-lg-4-->
 
-<!-- Header -->
-<header class="w3-container">
-    <h1 class="w3-xxxlarge"><img src="img/ecuson.jpg" width="150px"><b>F.C EPINAY ATHLETICO</b></h1>
-</header>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container-fluid">
-        <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
-            <div class="navbar-nav">
-                <a href="home.html" class="nav-item nav-link active">ACTUALITÉS</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">CLUB</a>
-                    <div class="dropdown-menu">
-                        <a href="presentation.html" class="dropdown-item">PRÉSENTATION</a>
-                        <a href="commite.html" class="dropdown-item">LE COMMITÉ DIRECTEUR</a>
-                        <a href="#" class="dropdown-item">LE PERSONNEL</a>
-                        <a href="#" class="dropdown-item">LES INFRASTRUCTURES</a>
-                        <a href="#" class="dropdown-item">CHARTES</a>
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">LES SENIORS</a>
-                    <div class="dropdown-menu">
-                        <a href="team.html" class="dropdown-item">SENIORS A</a>
-                        <a href="#" class="dropdown-item">SENIORS B</a>
-                        <a href="#" class="dropdown-item">FUTSAL</a>
-                        <a href="#" class="dropdown-item">VÉTÉRANS</a>
-                        <a href="#" class="dropdown-item">CDM</a>
-                        <a href="#" class="dropdown-item">CHAMPIONNAT + 45 ANS</a>
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">LES JEUNES</a>
-                    <div class="dropdown-menu rounded-0 m-0">
-                        <a href="#" class="dropdown-item">U18</a>
-                        <a href="#" class="dropdown-item">U16</a>
-                        <a href="#" class="dropdown-item">U14</a>
-                        <a href="#" class="dropdown-item">U12-U13</a>
-                        <a href="#" class="dropdown-item">U12-U13</a>
-                        <a href="#" class="dropdown-item">U10-U11</a>
-                        <a href="#" class="dropdown-item">U6-U9</a>
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">LES FÉMININES</a>
-                    <div class="dropdown-menu rounded-0 m-0">
-                        <a href="category.html" class="dropdown-item">SENIORS F</a>
-                        <a href="#" class="dropdown-item">U18 F</a>
-                        <a href="#" class="dropdown-item">U15 F</a>
-                        <a href="#" class="dropdown-item">U13 F</a>
-                        <a href="#" class="dropdown-item">U11 F</a>
-                    </div>
-                </div>
-                <a href="single.html" class="nav-item nav-link">JOUEURS FORMÉS AU CLUB</a>
-                <a href="contact.html" class="nav-item nav-link">CONTACT</a>
-            </div>
-        </div>
+    <!-- Header -->
+    <div class="w3-bar" style="background-color: white;">
+        <img src="img/header.png" width="100%">
     </div>
-</nav>
-  
-<div class="w3-container w3-white w3-margin w3-padding-large">
-    <div>
-      <h1>LE STAFF DE F. C. D'EPINAY ATHLETICO</h1>
-      <div class="row">
-        <div class="col-sm-4">
-            <div class="card-body">
-                <h4 class="card-title">PRESIDENT</h4>
-                <strong>BOUBOU YATERA</strong>
-                <p class="card-text">Email officiel : fcea@lpiff.fr<br>
-                Mobile personnel : 0771220065</p>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(175, 3, 15);">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center text-center" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="home.html" class="nav-item nav-link">ACTUALITÉS</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">CLUB</a>
+                        <div class="dropdown-menu">
+                            <a href="presentation.html" class="dropdown-item">PRÉSENTATION</a>
+                            <a href="commite.html" class="dropdown-item">LE COMMITÉ DIRECTEUR</a>
+                            <a href="infra.html" class="dropdown-item">LES INFRASTRUCTURES</a>
+                            <a href="old_players.html" class="dropdown-item">ANCIENS JOUEURS</a>
+                            <a href="charte.html" class="dropdown-item">CHARTES</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">LES SENIORS</a>
+                        <div class="dropdown-menu">
+                            <a href="team.html" class="dropdown-item">SENIORS A</a>
+                            <a href="team.html" class="dropdown-item">SENIORS B</a>
+                            <a href="team.html" class="dropdown-item">FUTSAL</a>
+                            <a href="team.html" class="dropdown-item">VÉTÉRANS</a>
+                            <a href="team.html" class="dropdown-item">CDM</a>
+                            <a href="team.html" class="dropdown-item">CHAMPIONNAT + 45 ANS</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="team.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">LES JEUNES</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="team.html" class="dropdown-item">U18</a>
+                            <a href="team.html" class="dropdown-item">U16</a>
+                            <a href="team.html" class="dropdown-item">U14</a>
+                            <a href="team.html" class="dropdown-item">U12-U13</a>
+                            <a href="team.html" class="dropdown-item">U12-U13</a>
+                            <a href="team.html" class="dropdown-item">U10-U11</a>
+                            <a href="team.html" class="dropdown-item">U6-U9</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">LES FÉMININES</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="team.html" class="dropdown-item">SENIORS F</a>
+                            <a href="team.html" class="dropdown-item">U18 F</a>
+                            <a href="team.html" class="dropdown-item">U15 F</a>
+                            <a href="team.html" class="dropdown-item">U13 F</a>
+                            <a href="team.html" class="dropdown-item">U11 F</a>
+                        </div>
+                    </div>
+                    <a href="media.html" class="nav-item nav-link">MÉDIAS</a>
+                    <a href="contact.html" class="nav-item nav-link">CONTACT</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card-body">
-                <h4 class="card-title">CORRESPONDANT</h4>
-                <strong>KARINA LEBCIR</strong>
-                <p class="card-text">Email officiel : fc.epinayathletico@outlook.fr<br>
-                Mobile personnel : </p>
+        </nav>
+    </div>
+    <!-- Header -->
+
+    <!-- cards -->
+    <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div>
+          <h1>LE STAFF DE F. C. D'EPINAY ATHLETICO</h1>
+          <div class="row">
+            <div class="col-sm-4">
+                <div class="card-body">
+                    <h4 class="card-title">PRESIDENT</h4>
+                    <strong>BOUBOU YATERA</strong>
+                    <p class="card-text">Email officiel : fcea@lpiff.fr<br>
+                    Mobile personnel : 0771220065</p>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card-body">
-                <h4 class="card-title">SECRETAIRE GENERAL</h4>
-                <strong>KARINA LEBCIR</strong>
-                <p class="card-text">Email officiel : fc.epinayathletico@outlook.fr<br>
-                Mobile personnel : </p>
+            <div class="col-sm-4">
+                <div class="card-body">
+                    <h4 class="card-title">CORRESPONDANT</h4>
+                    <strong>KARINA LEBCIR</strong>
+                    <p class="card-text">Email officiel : fc.epinayathletico@outlook.fr<br>
+                    Mobile personnel : </p>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card-body">
-                <h4 class="card-title">TRESORIER</h4>
-                <strong>NICOLAS MATUMONA</strong>
-                <p class="card-text">Email officiel : nmatumona@hotmail.fr<br>
-                Mobile personnel : 06 88 02 38 12</p>
+            <div class="col-sm-4">
+                <div class="card-body">
+                    <h4 class="card-title">SECRETAIRE GENERAL</h4>
+                    <strong>KARINA LEBCIR</strong>
+                    <p class="card-text">Email officiel : fc.epinayathletico@outlook.fr<br>
+                    Mobile personnel : </p>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card-body">
-                <h4 class="card-title">DIRECTEUR TECHNIQUE</h4>
-                <strong>KHALED MOHAMED</strong>
-                <p class="card-text">Email officiel : nmatumona@hotmail.fr<br>
-                Mobile personnel : 06 23 71 01 68</p>
+            <div class="col-sm-4">
+                <div class="card-body">
+                    <h4 class="card-title">TRESORIER</h4>
+                    <strong>NICOLAS MATUMONA</strong>
+                    <p class="card-text">Email officiel : nmatumona@hotmail.fr<br>
+                    Mobile personnel : 06 88 02 38 12</p>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card-body">
-                <h4 class="card-title">REFERENT ARBITRE</h4>
-                <strong>MOISE NGANGA AGANOR</strong>
-                <p class="card-text">Email officiel : agenornganga@gmail.com<br>
-                Mobile personnel : </p>
+            <div class="col-sm-4">
+                <div class="card-body">
+                    <h4 class="card-title">DIRECTEUR TECHNIQUE</h4>
+                    <strong>KHALED MOHAMED</strong>
+                    <p class="card-text">Email officiel : nmatumona@hotmail.fr<br>
+                    Mobile personnel : 06 23 71 01 68</p>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card-body">
-                <h4 class="card-title">REFERENT FEMININ</h4>
-                <strong>ALEXANDRE DORVIL</strong>
-                <p class="card-text">Email officiel : fcea@lpiff.fr<br>
-                Mobile personnel : </p>
+            <div class="col-sm-4">
+                <div class="card-body">
+                    <h4 class="card-title">REFERENT ARBITRE</h4>
+                    <strong>MOISE NGANGA AGANOR</strong>
+                    <p class="card-text">Email officiel : agenornganga@gmail.com<br>
+                    Mobile personnel : </p>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card-body">
-                <h4 class="card-title">RESPONSABLE TECHNIQUE ECOLE DE FOOT (U6 - U11)</h4>
-                <strong>CHABANE BELMANAA</strong>
-                <p class="card-text">Email officiel : fceachab@orange.fr<br>
-                Mobile personnel : 06 31 23 33 77</p>
+            <div class="col-sm-4">
+                <div class="card-body">
+                    <h4 class="card-title">REFERENT FEMININ</h4>
+                    <strong>ALEXANDRE DORVIL</strong>
+                    <p class="card-text">Email officiel : fcea@lpiff.fr<br>
+                    Mobile personnel : </p>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card-body">
-                <h4 class="card-title">U6 - U7 - RESPONSABLE TECHNIQUE CATEGORIE</h4>
-                <strong>TCHERIE TSHILONDA</strong>
-                <p class="card-text">Email officiel : tcherie-florantin@hotmail.fr<br>
-                Mobile personnel : 0652530896</p>
+            <div class="col-sm-4">
+                <div class="card-body">
+                    <h4 class="card-title">RESPONSABLE TECHNIQUE ECOLE DE FOOT (U6 - U11)</h4>
+                    <strong>CHABANE BELMANAA</strong>
+                    <p class="card-text">Email officiel : fceachab@orange.fr<br>
+                    Mobile personnel : 06 31 23 33 77</p>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card-body">
-                <h4 class="card-title">U8 - U9 - RESPONSABLE TECHNIQUE CATEGORIE</h4>
-                <strong>MICKAEL DE CARVALHO</strong>
-                <p class="card-text">Email officiel : <br>
-                Mobile personnel : 0667760795</p>
+            <div class="col-sm-4">
+                <div class="card-body">
+                    <h4 class="card-title">U6 - U7 - RESPONSABLE TECHNIQUE CATEGORIE</h4>
+                    <strong>TCHERIE TSHILONDA</strong>
+                    <p class="card-text">Email officiel : tcherie-florantin@hotmail.fr<br>
+                    Mobile personnel : 0652530896</p>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card-body">
-                <h4 class="card-title">U10 - U11 - RESPONSABLE TECHNIQUE CATEGORIE</h4>
-                <strong>BOUBOU YATERA</strong>
-                <p class="card-text">Email officiel : fcea@lpiff.fr<br>
-                Mobile personnel : 0771220065</p>
+            <div class="col-sm-4">
+                <div class="card-body">
+                    <h4 class="card-title">U8 - U9 - RESPONSABLE TECHNIQUE CATEGORIE</h4>
+                    <strong>MICKAEL DE CARVALHO</strong>
+                    <p class="card-text">Email officiel : <br>
+                    Mobile personnel : 0667760795</p>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="card-body">
-                <h4 class="card-title">SENIORS VETERANS - DIRIGEANT D'EQUIPE</h4>
-                <strong>HICHAM DURAND</strong>
-                <p class="card-text">Email officiel : fcea@lpiff.fr<br>
-                Mobile personnel : 06 58 95 68 58</p>
+            <div class="col-sm-4">
+                <div class="card-body">
+                    <h4 class="card-title">U10 - U11 - RESPONSABLE TECHNIQUE CATEGORIE</h4>
+                    <strong>BOUBOU YATERA</strong>
+                    <p class="card-text">Email officiel : fcea@lpiff.fr<br>
+                    Mobile personnel : 0771220065</p>
+                </div>
             </div>
+            <div class="col-sm-4">
+                <div class="card-body">
+                    <h4 class="card-title">SENIORS VETERANS - DIRIGEANT D'EQUIPE</h4>
+                    <strong>HICHAM DURAND</strong>
+                    <p class="card-text">Email officiel : fcea@lpiff.fr<br>
+                    Mobile personnel : 06 58 95 68 58</p>
+                </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    <!-- End cards -->
 
 
 
-<!-- Footer -->
-<footer class="container-fluid bg-grey py-5">
-  <div class="container">
-     <div class="row">
-        <div class="col-md-6">
-           <div class="row">
-              <div class="col-md-6 ">
-                 <div class="logo-part">
-                    <img src="https://i.ibb.co/sHZz13b/logo.png" class="w-50 logo-footer" >
-                    <p>7637 Laurel Dr. King Of Prussia, PA 19406</p>
-                    <p>Use this tool as test data for an automated system or find your next pen</p>
-                 </div>
-              </div>
-              <div class="col-md-6 px-4">
-                 <h6> About Company</h6>
-                 <p>But horizontal lines can only be a full pixel high.</p>
-                 <a href="#" class="btn-footer"> More Info </a><br>
-                 <a href="#" class="btn-footer"> Contact Us</a>
-              </div>
-           </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid" style="background-image: url(../img/stade.jpg); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                </div>
+                <div class="col-md-7" style="background-color: white; margin-top: 30px;">
+                    <img src="img/plan.png" width="100%" style="padding: 10px;">
+                </div>
+            </div>
         </div>
-        <div class="col-md-6">
-           <div class="row">
-              <div class="col-md-6 px-4">
-                 <h6> Help us</h6>
-                 <div class="row ">
-                    <div class="col-md-6">
-                       <ul>
-                          <li> <a href="#"> Home</a> </li>
-                          <li> <a href="#"> About</a> </li>
-                          <li> <a href="#"> Service</a> </li>
-                          <li> <a href="#"> Team</a> </li>
-                          <li> <a href="#"> Help</a> </li>
-                          <li> <a href="#"> Contact</a> </li>
-                       </ul>
-                    </div>
-                    <div class="col-md-6 px-4">
-                       <ul>
-                          <li> <a href="#"> Cab Faciliy</a> </li>
-                          <li> <a href="#"> Fax</a> </li>
-                          <li> <a href="#"> Terms</a> </li>
-                          <li> <a href="#"> Policy</a> </li>
-                          <li> <a href="#"> Refunds</a> </li>
-                          <li> <a href="#"> Paypal</a> </li>
-                       </ul>
-                    </div>
-                 </div>
-              </div>
-              <div class="col-md-6 ">
-                 <h6> Newsletter</h6>
-                 <div class="social">
-                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                 </div>
-                 <form class="form-footer my-3">
-                    <input type="text"  placeholder="search here...." name="search">
-                    <input type="button" value="Go" >
-                 </form>
-                 <p>That's technology limitation of LCD monitors</p>
-              </div>
-           </div>
-        </div>
-     </div>
-  </div>
-  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  </footer>
+        <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <p style="color: white; background-color: rgb(175, 3, 15); text-align: center;"> ©2022 Football Club Epinay Athletico - Tout droits réservés</a></p>  
+    </footer>
 
-
-<script>
-// Toggle between hiding and showing blog replies/comments
-document.getElementById("myBtn").click();
-function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-function likeFunction(x) {
-  x.style.fontWeight = "bold";
-  x.innerHTML = "✓ Liked";
-}
-</script>
-
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/carrousel.js"></script>
 </body>
 </html>

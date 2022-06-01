@@ -1,13 +1,15 @@
 .slick-prev, .slick-next{
     position: absolute;
-    width: 70px;
+    width: 30px;
     cursor: pointer;
     top: 45%;
 }
 .slick-prev {
-    left: 0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-180deg);
+    left: 15px;
     z-index: 1;
 }
 .slick-next {
-    right: 0;
+    right: 15px;
 }

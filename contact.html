@@ -9,191 +9,177 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-<style>
-h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
-body {font-family: "Open Sans"}
-</style>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+<link rel="stylesheet" href="css/home.css" />
+<!-- le button style doit etre après bootstrap pour écraser le style de bootstrap-->
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/carrousel.css" />
 </head>
 <body class="w3-light-grey">
 
-<!-- Navigation bar with social media icons -->
-<div class="w3-bar w3-black w3-hide-small">
-  <b class="w3-bar-item w3-button w3-left">Just me, myself and I, exploring the universe of uknownment.</b>
-  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-facebook-official"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-instagram"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-snapchat"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-flickr"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-twitter"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-linkedin"></i></a>
-</div>
 
-<!-- Header -->
-<header class="w3-container w3-center w3-padding-5 w3-white">
-    <h1 class="w3-xxxlarge"><b>F.C EPINAY ATHLETICO</b></h1>
-    <h6>Welcome to the blog of <span class="w3-tag">Jane's world</span></h6>
-</header>
+    <!-- Les différents taille d'écran et le type d'affichage à adopter 
+    , commande à inserer sur toutes les div du row en question.
+    col-xs-12 col-sm-12 col-md-4 col-lg-4-->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <!-- Header -->
+    <div class="w3-bar" style="background-color: white;">
+        <img src="img/header.png" width="100%">
+    </div>
+
     <div class="container-fluid">
-        <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
-            <div class="navbar-nav">
-                <a href="home.html" class="nav-item nav-link">ACTUALITÉS</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">CLUB</a>
-                    <div class="dropdown-menu">
-                        <a href="presentation.html" class="dropdown-item">PRÉSENTATION</a>
-                        <a href="commite.html" class="dropdown-item">LE COMMITÉ DIRECTEUR</a>
-                        <a href="#" class="dropdown-item">LE PERSONNEL</a>
-                        <a href="#" class="dropdown-item">LES INFRASTRUCTURES</a>
-                        <a href="#" class="dropdown-item">CHARTES</a>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(175, 3, 15);">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center text-center" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="home.html" class="nav-item nav-link">ACTUALITÉS</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">CLUB</a>
+                        <div class="dropdown-menu">
+                            <a href="presentation.html" class="dropdown-item">PRÉSENTATION</a>
+                            <a href="commite.html" class="dropdown-item">LE COMMITÉ DIRECTEUR</a>
+                            <a href="infra.html" class="dropdown-item">LES INFRASTRUCTURES</a>
+                            <a href="old_players.html" class="dropdown-item">ANCIENS JOUEURS</a>
+                            <a href="charte.html" class="dropdown-item">CHARTES</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">LES SENIORS</a>
+                        <div class="dropdown-menu">
+                            <a href="team.html" class="dropdown-item">SENIORS A</a>
+                            <a href="team.html" class="dropdown-item">SENIORS B</a>
+                            <a href="team.html" class="dropdown-item">FUTSAL</a>
+                            <a href="team.html" class="dropdown-item">VÉTÉRANS</a>
+                            <a href="team.html" class="dropdown-item">CDM</a>
+                            <a href="team.html" class="dropdown-item">CHAMPIONNAT + 45 ANS</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="team.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">LES JEUNES</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="team.html" class="dropdown-item">U18</a>
+                            <a href="team.html" class="dropdown-item">U16</a>
+                            <a href="team.html" class="dropdown-item">U14</a>
+                            <a href="team.html" class="dropdown-item">U12-U13</a>
+                            <a href="team.html" class="dropdown-item">U12-U13</a>
+                            <a href="team.html" class="dropdown-item">U10-U11</a>
+                            <a href="team.html" class="dropdown-item">U6-U9</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">LES FÉMININES</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="team.html" class="dropdown-item">SENIORS F</a>
+                            <a href="team.html" class="dropdown-item">U18 F</a>
+                            <a href="team.html" class="dropdown-item">U15 F</a>
+                            <a href="team.html" class="dropdown-item">U13 F</a>
+                            <a href="team.html" class="dropdown-item">U11 F</a>
+                        </div>
+                    </div>
+                    <a href="media.html" class="nav-item nav-link">MÉDIAS</a>
+                    <a href="contact.html" class="nav-item nav-link">CONTACT</a>
                     </div>
                 </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">LES SENIORS</a>
-                    <div class="dropdown-menu">
-                        <a href="team.html" class="dropdown-item">SENIORS A</a>
-                        <a href="#" class="dropdown-item">SENIORS B</a>
-                        <a href="#" class="dropdown-item">FUTSAL</a>
-                        <a href="#" class="dropdown-item">VÉTÉRANS</a>
-                        <a href="#" class="dropdown-item">CDM</a>
-                        <a href="#" class="dropdown-item">CHAMPIONNAT + 45 ANS</a>
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">LES JEUNES</a>
-                    <div class="dropdown-menu rounded-0 m-0">
-                        <a href="#" class="dropdown-item">U18</a>
-                        <a href="#" class="dropdown-item">U16</a>
-                        <a href="#" class="dropdown-item">U14</a>
-                        <a href="#" class="dropdown-item">U12-U13</a>
-                        <a href="#" class="dropdown-item">U12-U13</a>
-                        <a href="#" class="dropdown-item">U10-U11</a>
-                        <a href="#" class="dropdown-item">U6-U9</a>
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">LES FÉMININES</a>
-                    <div class="dropdown-menu rounded-0 m-0">
-                        <a href="team.html" class="dropdown-item">SENIORS F</a>
-                        <a href="#" class="dropdown-item">U18 F</a>
-                        <a href="#" class="dropdown-item">U15 F</a>
-                        <a href="#" class="dropdown-item">U13 F</a>
-                        <a href="#" class="dropdown-item">U11 F</a>
-                    </div>
-                </div>
-                <a href="" class="nav-item nav-link">JOUEURS FORMÉS AU CLUB</a>
-                <a href="contact.html" class="nav-item nav-link active">CONTACT</a>
             </div>
-            <div class="navbar-nav ms-auto">
-                <a href="#" class="nav-item nav-link">Login</a>
-            </div>
-        </div>
+        </nav>
     </div>
-</nav>
-  
-<!-- Contact Start -->
-<div class="container-fluid py-3">
-    <div class="container">
-        <div class="bg-light py-2 px-4 mb-3">
-            <h3 class="m-0">Contact Us For Any Queries</h3>
-        </div>
-        <div class="row">
-            <div class="col-md-5">
-                <div class="bg-light mb-3" style="padding: 30px;">
-                    <h6 class="font-weight-bold">Get in touch</h6>
-                    <p>Labore ipsum ipsum rebum erat amet nonumy, nonumy erat justo sit dolor ipsum sed, kasd lorem sit et duo dolore justo lorem stet labore, diam dolor et diam dolor eos magna, at vero lorem elitr</p>
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
-                        <div class="d-flex flex-column">
-                            <h6 class="font-weight-bold">Our Office</h6>
-                            <p class="m-0">123 Street, New York, USA</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fa fa-2x fa-envelope-open text-primary mr-3"></i>
-                        <div class="d-flex flex-column">
-                            <h6 class="font-weight-bold">Email Us</h6>
-                            <p class="m-0">info@example.com</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <i class="fas fa-2x fa-phone-alt text-primary mr-3"></i>
-                        <div class="d-flex flex-column">
-                            <h6 class="font-weight-bold">Call Us</h6>
-                            <p class="m-0">+012 345 6789</p>
-                        </div>
-                    </div>
-                </div>
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="bg-light py-2 px-4 mb-3">
+                <h3 class="m-0">Contact Us For Any Queries</h3>
             </div>
-            <div class="col-md-7">
-                <div class="contact-form bg-light mb-3" style="padding: 30px;">
-                    <div id="success"></div>
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                        <div class="form-row">
-                            <div class="col-md-6">
-                                <div class="control-group">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="control-group">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="bg-light mb-3" style="padding: 30px;">
+                        <h6 class="font-weight-bold">Get in touch</h6>
+                        <p>Labore ipsum ipsum rebum erat amet nonumy, nonumy erat justo sit dolor ipsum sed, kasd lorem sit et duo dolore justo lorem stet labore, diam dolor et diam dolor eos magna, at vero lorem elitr</p>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa fa-2x fa-map-marker-alt text-primary mr-3"></i>
+                            <div class="d-flex flex-column">
+                                <h6 class="font-weight-bold">Our Office</h6>
+                                <p class="m-0">123 Street, New York, USA</p>
                             </div>
                         </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control p-4" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                            <p class="help-block text-danger"></p>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fa fa-2x fa-envelope-open text-primary mr-3"></i>
+                            <div class="d-flex flex-column">
+                                <h6 class="font-weight-bold">Email Us</h6>
+                                <p class="m-0">info@example.com</p>
+                            </div>
                         </div>
-                        <div class="control-group">
-                            <textarea class="form-control" rows="4" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                            <p class="help-block text-danger"></p>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-2x fa-phone-alt text-primary mr-3"></i>
+                            <div class="d-flex flex-column">
+                                <h6 class="font-weight-bold">Call Us</h6>
+                                <p class="m-0">+012 345 6789</p>
+                            </div>
                         </div>
-                        <div>
-                            <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;" type="submit" id="sendMessageButton">Send Message</button>
-                        </div>
-                    </form>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="contact-form bg-light mb-3" style="padding: 30px;">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="control-group">
+                                        <input type="text" class="form-control p-4" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="control-group">
+                                        <input type="email" class="form-control p-4" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control" rows="4" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;" type="submit" id="sendMessageButton">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Contact End -->
-
-<!-- Plan -->
-<div class="container bg-light">
-    <div class="container ">
-        <img src="img/plan.png" width="100%" height="400px">
-    </div>
-</div>
+    <!-- Contact End -->
 
 
-<!-- Footer -->
-<footer class="w3-container w3-dark-grey" style="padding:32px">
-  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+    <!-- Footer -->
+    <footer class="container-fluid" style="background-image: url(../img/stade.jpg); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                </div>
+                <div class="col-md-7" style="background-color: white; margin-top: 30px;">
+                    <img src="img/plan.png" width="100%" style="padding: 10px;">
+                </div>
+            </div>
+        </div>
+        <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <p style="color: white; background-color: rgb(175, 3, 15); text-align: center;"> ©2022 Football Club Epinay Athletico - Tout droits réservés</a></p>  
+    </footer>
 
-<script>
-// Toggle between hiding and showing blog replies/comments
-document.getElementById("myBtn").click();
-function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-function likeFunction(x) {
-  x.style.fontWeight = "bold";
-  x.innerHTML = "✓ Liked";
-}
-</script>
-
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/carrousel.js"></script>
 </body>
 </html>
