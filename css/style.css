@@ -171,13 +171,13 @@ sup {
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: white;
+  color: red;
 }
 
 a:not([href]):not([class]) {
